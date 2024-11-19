@@ -1,30 +1,41 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ClassandObjects1
+﻿
+using System;
+using static System.Net.Mime.MediaTypeNames;
+class Program
 {
-    internal class Program
+  
+    public void fun1(int x)
     {
-        class Car
-        {
-            public int id;
-            public string name;
-            public void Drive()
+      /*  Console.WriteLine("Enter the value of x");
+        x = Convert.ToInt32(Console.ReadLine()); */
+        Console.WriteLine($"x is {x}");
+    }
+    public void fun1()
+    {
+        Console.WriteLine("x is : 4");
+    }
 
-            {
-                Console.WriteLine($"{id} car is {name}");
-            }
-                }
-        static void Main(string[] args)
-        {
-              Car car = new Car();
-            car.id = 112;
-            car.name  = "Test";
-            car.Drive();
+    public void fun1(int x,float y)
+    {
+        /*Console.WriteLine("Enter value of x and y");
+        x = Convert.ToInt32(Console.ReadLine());
+        y = Convert.ToInt32(Console.ReadLine());*/
 
-        }
+        Console.WriteLine("Value of x is : "+x +"Value of y is :"+y);
+    }
+
+    public static void Main(string[] args)
+    {
+        Program  test1 =  new Program();
+        test1.fun1();
+        test1.fun1(23);
+        test1.fun1(21,21.3f);
+
+        Console.ReadLine();
+
     }
 }
+//class Program1
+//{
+    
+//}
